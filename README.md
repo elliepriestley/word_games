@@ -25,7 +25,7 @@ Get an executable (or .jar in this case)
 
 How to run the program
 ----------------------
-- Navigate to the kotlin sub folder: `cd src/main/kotlin`
+- Navigate to the kotlin sub folder: `cd src/main/kotlin/unscramble`
 - Run `java -jar unscramble.jar`
 
 How to pass arguments to the program
