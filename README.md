@@ -12,7 +12,7 @@ brew install kotlin`
 Run tests
 ---------
 
-- Run `./gradlew test` from the 'main' directory (to navigate from the root directory: src/main) to run tests on the Command Line
+- Run `./gradlew test` from the root directory to run tests on the Command Line
 
 
 Build

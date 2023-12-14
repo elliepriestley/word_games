@@ -11,10 +11,14 @@ class UnscrambleGameTest {
         assertEquals(1, 1)
     }
 
-//    @Test
-//    fun wordRandomiser() {
-//    }
-//
+    @Test
+    fun `test that wordRandomiser function returns a word from inputList`() {
+        val underTest = UnscrambleGame()
+        val wordList = underTest.wordList
+
+        assert(underTest.wordRandomiser(wordList) in wordList)
+    }
+
 //    @Test
 //    fun scrambleWord() {
 //    }
