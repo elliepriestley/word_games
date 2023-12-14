@@ -45,8 +45,12 @@ class UnscrambleGameTest {
         val underTest = UnscrambleGame()
         assertNotEquals("pound", underTest.scrambleWord("pound"))
     }
-//
-//    @Test
-//    fun playGame() {
-//    }
+
+    @Test
+    fun `test that isGuessCorrect function returns true for a correct guess`() {
+        val underTest = UnscrambleGame()
+        val word: String = "hired"
+        assertTrue(underTest.isGuessCorrect(word, word))
+    }
+
 }
