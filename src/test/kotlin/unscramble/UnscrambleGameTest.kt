@@ -20,6 +20,20 @@ class UnscrambleGameTest {
     }
 
     @Test
+    fun `test that wordRandomiser function selects a random word from inputList`() {
+        val underTest = UnscrambleGame()
+        val wordList = underTest.wordList
+        // creating a set below means only unique words are stored
+        val selectedWords = mutableSetOf<String>()
+        repeat(100) {
+            val selectedWord = underTest.wordRandomiser(wordList)
+            assert(selectedWord in wordList)
+            selectedWords.add(selectedWord)
+        }
+        assertTrue(selectedWords.size > 1)
+    }
+
+    @Test
     fun `test that scrambleWord function returns all the same characters as input word`() {
         val underTest = UnscrambleGame()
 
