@@ -53,4 +53,12 @@ class UnscrambleGameTest {
         assertTrue(underTest.isGuessCorrect(word, word))
     }
 
+    @Test
+    fun `test that isGuessCorrect function returns false for an incorrect guess`() {
+        val underTest = UnscrambleGame()
+        val correctAnswer = "comma"
+        val incorrectGuess = "commy"
+        assertFalse(underTest.isGuessCorrect(incorrectGuess, correctAnswer))
+    }
+
 }
