@@ -6,7 +6,7 @@ Prerequisites
 - install the latest version of the Kotlin compiler (currently `1.9.21`) either manually from [Github Releases](https://github.com/JetBrains/kotlin/releases/tag/v1.9.21) or on the command line. On MacOS you can install the compiler via [HomeBrew](https://brew.sh/):
 `brew update;
 brew install kotlin`
-- JUNIT5 ?
+- JUNIT5 ? - added to dependencies in gradle file
 
 
 Run tests

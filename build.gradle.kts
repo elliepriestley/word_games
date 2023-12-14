@@ -1,3 +1,5 @@
+
+
 plugins {
     kotlin("jvm") version "1.9.0"
 }
@@ -11,6 +13,7 @@ repositories {
 
 dependencies {
     testImplementation(kotlin("test"))
+    testImplementation("org.jetbrains.kotlin:kotlin-test-junit")
 }
 
 tasks.test {
@@ -19,4 +22,15 @@ tasks.test {
 
 kotlin {
     jvmToolchain(8)
+}
+
+tasks.jar {
+    manifest {
+        attributes["Main-Class"] = "unscramble.mainKt"
+    }
+    archiveBaseName = "unscramble"
+    configurations["compileClasspath"].forEach { file: File ->
+        from(zipTree(file.absoluteFile))
+    }
+    duplicatesStrategy = DuplicatesStrategy.INCLUDE
 }
