@@ -18,14 +18,14 @@ Build
 -----
 Get an executable (or .jar in this case)
 - Navigate to the kotlin sub folder: `cd src/main/kotlin`
-- Compile the application: `kotlinc main.kt -include-runtime -d hello.jar` 
+- Compile the application: `kotlinc *.kt -include-runtime -d unscramble.jar` 
 
 
 
 How to run the program
 ----------------------
 - Navigate to the kotlin sub folder: `cd src/main/kotlin`
-- Run `java -jar hello.jar`
+- Run `java -jar unscramble.jar`
 
 How to pass arguments to the program
 ------------------------------------

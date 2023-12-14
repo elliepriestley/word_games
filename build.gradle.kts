@@ -26,7 +26,7 @@ kotlin {
 
 tasks.jar {
     manifest {
-        attributes["Main-Class"] = "unscramble.mainKt"
+        attributes["Main-Class"] = "unscramble.UnscrambleGame"
     }
     archiveBaseName = "unscramble"
     configurations["compileClasspath"].forEach { file: File ->
