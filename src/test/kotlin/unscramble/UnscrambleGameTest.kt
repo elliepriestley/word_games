@@ -19,13 +19,32 @@ class UnscrambleGameTest {
         assert(underTest.wordRandomiser(wordList) in wordList)
     }
 
-//    @Test
-//    fun scrambleWord() {
-//    }
-//
-//    @Test
-//    fun isGuessCorrect() {
-//    }
+    @Test
+    fun `test that scrambleWord function returns all the same characters as input word`() {
+        val underTest = UnscrambleGame()
+
+        "pound".forEach { char ->
+            assert(underTest.scrambleWord("pound").contains(char))
+        }
+        "trice".forEach { char ->
+            assert(underTest.scrambleWord("trice").contains(char))
+        }
+        "hired".forEach { char ->
+            assert(underTest.scrambleWord("hired").contains(char))
+        }
+        "comma".forEach { char ->
+            assert(underTest.scrambleWord("comma").contains(char))
+        }
+        "logic".forEach { char ->
+            assert(underTest.scrambleWord("logic").contains(char))
+        }
+    }
+
+    @Test
+    fun `test that scrambleWord function does not return input word without scrambling it`() {
+        val underTest = UnscrambleGame()
+        assertNotEquals("pound", underTest.scrambleWord("pound"))
+    }
 //
 //    @Test
 //    fun playGame() {

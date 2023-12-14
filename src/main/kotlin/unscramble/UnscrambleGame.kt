@@ -8,8 +8,10 @@ class UnscrambleGame {
     }
 
     fun scrambleWord(inputWord: String): String {
-        return inputWord.toList().shuffled().joinToString("")
+        val result = inputWord.toList().shuffled().joinToString("")
+        return if (result != inputWord) result else scrambleWord(result)
     }
+    // modify this function^ to ensure the return value is always different
 
     fun isGuessCorrect(userGuess: String, correctAnswer: String): Boolean {
         return userGuess == correctAnswer
