@@ -57,7 +57,8 @@ java -jar src/main/kotlin/unscramble/unscramble.jar
 
 To run the tests directly in the Command Line:
 - Navigate to the root directory 'word_games'
-- Run `./gradlew test`
+- Run `./gradlew test` to see all test information
+- If this does not display the individual tests, you may need to run `./gradlew test --rerun-tasks` as by default, Gradle only re-executes a task if its inputs have changed since the last execution. However, use this with caution as it increases the time it takes to run the tests and should generally only be used when debugging. 
 
 
 ## 🏁 How to run the program
