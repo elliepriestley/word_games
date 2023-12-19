@@ -7,14 +7,9 @@ import org.junit.jupiter.api.Assertions.*
 class UnscrambleGameTest {
 
     @Test
-    fun `test example test`() {
-        assertEquals(1, 1)
-    }
-
-    @Test
     fun `test that wordRandomiser function returns a word from inputList`() {
         val underTest = UnscrambleGame()
-        val wordList = underTest.wordList
+        val wordList = underTest.fiveLetterWordList
 
         assert(underTest.wordRandomiser(wordList) in wordList)
     }
@@ -22,7 +17,7 @@ class UnscrambleGameTest {
     @Test
     fun `test that wordRandomiser function selects a random word from inputList`() {
         val underTest = UnscrambleGame()
-        val wordList = underTest.wordList
+        val wordList = underTest.fiveLetterWordList
         // creating a set below means only unique words are stored
         val selectedWords = mutableSetOf<String>()
         repeat(100) {
@@ -73,6 +68,14 @@ class UnscrambleGameTest {
         val correctAnswer = "comma"
         val incorrectGuess = "commy"
         assertFalse(underTest.isGuessCorrect(incorrectGuess, correctAnswer))
+    }
+
+    @Test
+    fun `test that fiveLetterWordList only contains five letter words`() {
+        val underTest = UnscrambleGame()
+        val wordList = underTest.fiveLetterWordList
+
+        assertTrue(wordList.all {it.length == 5})
     }
 
 }

@@ -1,7 +1,8 @@
 package unscramble
 
 class UnscrambleGame {
-    val wordList = listOf("pound", "trice", "hired", "comma", "logic")
+    val wordText = UnscrambleWordsTxt()
+    val fiveLetterWordList = wordText.unfilteredWordList.filter { it.length == 5 }
 
     fun wordRandomiser(inputList: List<String>): String {
         return inputList.random()
@@ -17,7 +18,7 @@ class UnscrambleGame {
     }
 
     fun playGame() {
-        val word = wordRandomiser(wordList)
+        val word = wordRandomiser(fiveLetterWordList)
         val scrambledWord = scrambleWord(word)
         println("\n" +
                 "  _   _                                    _     _      \n" +
@@ -38,3 +39,4 @@ class UnscrambleGame {
         }
     }
 }
+
