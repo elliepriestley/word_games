@@ -78,4 +78,14 @@ class UnscrambleGameTest {
         assertTrue(wordList.all {it.length == 5})
     }
 
+    @Test
+    fun `test checkUserInputIsValid function - returns false if userInput is not a five letter word`() {
+        val underTest = UnscrambleGame()
+        assertEquals(false, underTest.checkUserInputIsValid(""))
+        assertEquals(false, underTest.checkUserInputIsValid("abcdefgh"))
+        assertEquals(false, underTest.checkUserInputIsValid("this is longer than expected"))
+        assertEquals(false, underTest.checkUserInputIsValid("ab"))
+
+    }
+
 }

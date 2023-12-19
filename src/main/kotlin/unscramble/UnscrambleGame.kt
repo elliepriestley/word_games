@@ -17,6 +17,10 @@ class UnscrambleGame {
         return userGuess == correctAnswer
     }
 
+    fun checkUserInputIsValid(userInput: String): Boolean {
+       return (userInput.length == 5)
+    }
+
     fun playGame() {
         val word = wordRandomiser(fiveLetterWordList)
         val scrambledWord = scrambleWord(word)
@@ -38,5 +42,7 @@ class UnscrambleGame {
             println("\nOh no! The correct answer was '$word'. Better luck next time! 😬")
         }
     }
+
+
 }
 

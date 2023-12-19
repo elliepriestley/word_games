@@ -5,6 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4e255a98-7628-41f0-b54e-4bb191ffd7ff" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/kotlin/unscramble/UnscrambleWordsTxt.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/unscramble/UnscrambleGame.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/unscramble/UnscrambleGame.kt" afterDir="false" />
@@ -100,7 +101,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.UnscrambleGameTest">
+  <component name="RunManager" selected="Gradle.word_games [test]">
     <configuration name="UnscrambleGameTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -246,7 +247,7 @@
       <workItem from="1702631752558" duration="2698000" />
       <workItem from="1702646453278" duration="768000" />
       <workItem from="1702650724015" duration="604000" />
-      <workItem from="1702978287228" duration="1980000" />
+      <workItem from="1702978287228" duration="2315000" />
     </task>
     <servers />
   </component>
