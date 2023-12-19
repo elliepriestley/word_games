@@ -85,7 +85,17 @@ class UnscrambleGameTest {
         assertEquals(false, underTest.checkUserInputIsValid("abcdefgh"))
         assertEquals(false, underTest.checkUserInputIsValid("this is longer than expected"))
         assertEquals(false, underTest.checkUserInputIsValid("ab"))
+        assertEquals(false, underTest.checkUserInputIsValid("a"))
+    }
 
+    @Test
+    fun `test checkUserInputIsValid function - returns false if userInput contains a character not in a-z`() {
+        val underTest = UnscrambleGame()
+        assertEquals(false, underTest.checkUserInputIsValid(" "))
+        assertEquals(false, underTest.checkUserInputIsValid("12345"))
+        assertEquals(false, underTest.checkUserInputIsValid("?'*()"))
+        assertEquals(false, underTest.checkUserInputIsValid("     "))
+        assertEquals(false, underTest.checkUserInputIsValid("&dh90"))
     }
 
 }

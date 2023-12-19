@@ -18,7 +18,7 @@ class UnscrambleGame {
     }
 
     fun checkUserInputIsValid(userInput: String): Boolean {
-       return (userInput.length == 5)
+       return (userInput.length == 5 && userInput.all { char -> char in "a..z" })
     }
 
     fun playGame() {
