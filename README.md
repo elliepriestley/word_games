@@ -72,13 +72,18 @@ To run the tests directly in the Command Line:
 
 
 
-## 🧩 Usage Notes and Future Scope
+## 🧩 Usage Notes, Limitations and Future Scope
 
 This section lists any assumptions I have made about the functionality or known limitations of the program.
+ - Program now only accepts user guesses that are 5-letter words with characters a..z
  - Guess system is currently case-sensitive
  - Program does not currently accept command-line arguments.
  - Does not currently account for multiple correct answers on one scrambled word: i.e. 'hired' and 'hider'
  - Does not currently validate user input before submitting it as a guess, i.e. 'Are you sure x is your guess?'
- - Does not currently handle bad inputs to the command line, i.e. does not check in the case that if user input is empty, or not a five-letter word, it was likely a user error
  - Does not currently handle 'near-misses', where user's guess is only wrong by one character
  - Not tested on any other system than MacOS
+ - Several functions not fully tested - tested via user interaction rather than tests. This is due to the function's need for user input on CLI:
+   - userGuessIsValid function
+   - playIntroduction function
+   - didUserWinGame function
+   - playGame function

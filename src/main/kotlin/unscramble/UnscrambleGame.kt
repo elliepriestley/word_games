@@ -64,7 +64,7 @@ class UnscrambleGame {
         """.trimIndent())
     }
 
-    fun didUserWinGame(word: String, userGuess: String):Boolean {
+    private fun didUserWinGame(word: String, userGuess: String):Boolean {
         var updatedUserGuess = userGuess
         if (!isUserInputValid(updatedUserGuess)) {
             // if it's not valid, userGuessIsInvalid function is run until there is a valid user guess
@@ -72,9 +72,6 @@ class UnscrambleGame {
         }
         // once input is valid...is guess correct? True or False
         return isGuessCorrect(updatedUserGuess, word)
-
-
-
 
     }
 
