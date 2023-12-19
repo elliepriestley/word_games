@@ -35,7 +35,18 @@ class UnscrambleGame {
         println("\nThis is the Unscramble word game.👋\n\nYour goal is to unscramble a 5-letter word.\n\nYou have one guess...\n\nReady?\n\nHere is your random scrambled word: $scrambledWord")
         println("\nCan you unscramble it? Input your guess below 👇 and press Enter: ")
 
-        val userGuess = readln()
+        var userGuess = readln()
+
+        if (!checkUserInputIsValid(userGuess)) {
+            println("""
+                Your guess isn't valid - make sure it is a 5 letter word and doesn't contain special characters!
+                
+                Re-enter your guess below:
+                """.trimIndent())
+        }
+        userGuess = readln()
+
+
         if (isGuessCorrect(userGuess, word)) {
             println("\nCorrect! Well done, you've beaten the game! 🥳")
         } else {
