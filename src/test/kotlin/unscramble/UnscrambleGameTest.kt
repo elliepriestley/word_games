@@ -111,6 +111,15 @@ class UnscrambleGameTest {
 
     }
 
+    @Test
+    fun `test isGuessCorrect function - returns true even if userGuess is not all lowercase`() {
+        val underTest = UnscrambleGame()
+        assertEquals(true, underTest.isGuessCorrect("HELLO", "hello"))
+        assertEquals(true, underTest.isGuessCorrect("Mixed", "mixed"))
+        assertEquals(true, underTest.isGuessCorrect("SoCks", "socks"))
+        assertEquals(true, underTest.isGuessCorrect("shinY", "shiny"))
+    }
+
 }
 
 

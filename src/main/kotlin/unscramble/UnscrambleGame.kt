@@ -15,11 +15,11 @@ class UnscrambleGame {
     }
 
     fun isGuessCorrect(userGuess: String, correctAnswer: String): Boolean {
-        return userGuess == correctAnswer
+        return userGuess.lowercase() == correctAnswer
     }
 
     fun isUserInputValid(userInput: String): Boolean {
-       return (userInput.length == 5 && userInput.all { char -> char in 'a'..'z' })
+       return (userInput.length == 5 && userInput.all { char -> char in 'a'..'z' || char in 'A'..'Z'  })
     }
 
     fun userGuessIsInvalid(): String {
