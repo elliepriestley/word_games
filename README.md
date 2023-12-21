@@ -4,7 +4,7 @@ This is a guide for developers working on this codebase on how to run the progra
 
 ## 💬 Description
 
-Unscramble is a command-line game where the player is given a scrambled word, and they have to guess the original word. The game is written in Kotlin.
+Unscramble is a command-line game where the player is given two scrambled words, and they have to guess the original word for each in order to win. The game is written in Kotlin.
 
 ## 📚 Table of Contents
 - [Prerequisites](#-prerequisites)
@@ -20,14 +20,14 @@ Unscramble is a command-line game where the player is given a scrambled word, an
 ### Kotlin and Java:
 
 This project is written in Kotlin and requires the installation of the Kotlin compiler (version `1.9.21`):
-
 - You can manually install the compiler from [GitHub Releases](https://github.com/JetBrains/kotlin/releases/tag/v1.9.21) 
 - Or alternatively, you can install it directly on the command line 
   - Install it on macOS via [HomeBrew](https://brew.sh/) with:
     `brew update;
     brew install kotlin`
-- Install Java version: Corretto-17.0.9.8.1
-- TODO - is gradle installation needed?
+
+This project also requires the installaton of Java (version: 1.7 or above)
+
 
 
 
@@ -41,17 +41,6 @@ To get an executable (or .jar in this case)
 - Use this command to build the executable: `kotlinc *.kt -include-runtime -d unscramble.jar`
 - The executable is `java -jar unscramble.jar`
 
-To create a bash script in order to execute the program using `./unscramble`:
-- Navigate to the root directory 'word_games' 
-- Open a text editor in your terminal by typing `nano unscramble`, which opens the nano text editor and creates a new file named 'unscramble' 
-- Copy and paste the following lines into the text editor:
-
-```
-#!/bin/bash
-java -jar src/main/kotlin/unscramble/unscramble.jar
-```
-- Save the file and exit the text editor. If you're using nano, you can do this by pressing Ctrl+X, then Y, then Enter. 
-- Make the unscramble script executable by running the following command in your terminal: `chmod +x unscramble`.
 
  ## 🧪 Running tests
 
@@ -63,7 +52,7 @@ To run the tests directly in the Command Line:
 
 ## 🏁 How to run the program
 - Navigate to the root directory 'word_games'
-- As long as you have followed the instructions to create a bash script in [Installation and Build](#-installation-and-build), you can use the command `./unscramble` to run the shell script and start the program.
+- Use the command `./unscramble` to run the shell script and start the program.
 
 ## ✏️ How to pass arguments to the program
 
@@ -76,6 +65,9 @@ To run the tests directly in the Command Line:
 
 This section lists any assumptions I have made about the functionality or known limitations of the program.
  - Program now only accepts user guesses that are 5-letter words with characters a..z
+ - Program does not currently allow the user to choose the no of rounds / difficulty level
+ - Program does not currently allow the user to 'select' which word they want to unscramble first
+ - Program does not currently have the ability to recognise when a user is new. It will play the Introduction / rules to the game at the start of each new game
  - Guess system is currently case-sensitive
  - Program does not currently accept command-line arguments.
  - Does not currently account for multiple correct answers on one scrambled word: i.e. 'hired' and 'hider'
