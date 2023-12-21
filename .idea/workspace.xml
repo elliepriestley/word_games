@@ -5,12 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4e255a98-7628-41f0-b54e-4bb191ffd7ff" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/unscramble/UnscrambleWordsTxt.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/unscramble/UnscrambleGame.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/unscramble/UnscrambleGame.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/unscramble/unscramble.jar" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/unscramble/unscramble.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/kotlin/unscramble/UnscrambleGameTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/unscramble/UnscrambleGameTest.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -101,7 +96,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.word_games [test]">
+  <component name="RunManager" selected="Gradle.UnscrambleGameTest.test checkUserInputIsValid function - returns true if userInput only contains chars a-z and is 5 letters long">
     <configuration name="UnscrambleGameTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -116,6 +111,78 @@
             <option value=":test" />
             <option value="--tests" />
             <option value="&quot;unscramble.UnscrambleGameTest&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="UnscrambleGameTest.test checkUserInputIsValid function - returns false if userInput contains a character not in a-z" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;unscramble.UnscrambleGameTest.test checkUserInputIsValid function - returns false if userInput contains a character not in a-z&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="UnscrambleGameTest.test checkUserInputIsValid function - returns false if userInput is not a five letter word" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;unscramble.UnscrambleGameTest.test checkUserInputIsValid function - returns false if userInput is not a five letter word&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="UnscrambleGameTest.test checkUserInputIsValid function - returns true if userInput only contains chars a-z and is 5 letters long" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;unscramble.UnscrambleGameTest.test checkUserInputIsValid function - returns true if userInput only contains chars a-z and is 5 letters long&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -150,83 +217,13 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="UnscrambleGameTest.test that isGuessCorrect function returns false for an incorrect guess" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;unscramble.UnscrambleGameTest.test that isGuessCorrect function returns false for an incorrect guess&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>true</RunAsTest>
-      <method v="2" />
-    </configuration>
-    <configuration name="UnscrambleGameTest.test that wordRandomiser function selects a random word from inputList" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;unscramble.UnscrambleGameTest.test that wordRandomiser function selects a random word from inputList&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>true</RunAsTest>
-      <method v="2" />
-    </configuration>
-    <configuration name="word_games [test]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value="test" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>false</RunAsTest>
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.UnscrambleGameTest.test checkUserInputIsValid function - returns true if userInput only contains chars a-z and is 5 letters long" />
         <item itemvalue="Gradle.UnscrambleGameTest" />
+        <item itemvalue="Gradle.UnscrambleGameTest.test checkUserInputIsValid function - returns false if userInput contains a character not in a-z" />
+        <item itemvalue="Gradle.UnscrambleGameTest.test checkUserInputIsValid function - returns false if userInput is not a five letter word" />
         <item itemvalue="Gradle.UnscrambleGameTest.test that fiveLetterWordList only contains five letter words" />
-        <item itemvalue="Gradle.word_games [test]" />
-        <item itemvalue="Gradle.UnscrambleGameTest.test that wordRandomiser function selects a random word from inputList" />
-        <item itemvalue="Gradle.UnscrambleGameTest.test that isGuessCorrect function returns false for an incorrect guess" />
       </list>
     </recent_temporary>
   </component>
@@ -247,7 +244,9 @@
       <workItem from="1702631752558" duration="2698000" />
       <workItem from="1702646453278" duration="768000" />
       <workItem from="1702650724015" duration="604000" />
-      <workItem from="1702978287228" duration="2315000" />
+      <workItem from="1702978287228" duration="12867000" />
+      <workItem from="1703082784323" duration="10000" />
+      <workItem from="1703083889337" duration="2134000" />
     </task>
     <servers />
   </component>

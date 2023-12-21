@@ -3,6 +3,7 @@ package unscramble
 class UnscrambleGame {
     val wordText = UnscrambleWordsTxt()
     val fiveLetterWordList = wordText.unfilteredWordList.filter { it.length == 5 }
+    var gameCounter = 0
 
     fun wordRandomiser(inputList: List<String>): String {
         return inputList.random()
@@ -82,8 +83,15 @@ class UnscrambleGame {
         val userGuess = readln()
         val didWin = didUserWinGame(word, userGuess)
 
+
         if (didWin) {
-            println("\nCorrect! Well done, you've beaten the game! 🥳")
+            gameCounter += 1
+            if (gameCounter == 2) {
+                println("\nCorrect! Well done, you've beaten the game! 🥳")
+            } else {
+                println("Correct! Onto the second round...")
+                playGame()
+            }
         } else {
             println("\nOh no! The correct answer was '$word'. Better luck next time! 😬")
         }
