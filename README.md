@@ -70,7 +70,7 @@ This section lists any assumptions I have made about the functionality or known 
  - Does not currently account for multiple correct answers on one scrambled word: i.e. 'hired' and 'hider'
  - Does not currently validate user input before submitting it as a guess, i.e. 'Are you sure x is your guess?'
  - Does not currently handle 'near-misses', where user's guess is only wrong by one character
- - Not tested on any other system than MacOS
+ - Not tested on any other system than macOS
  - Several functions not fully tested - tested via user interaction rather than tests. This is due to the function's need for user input on CLI:
    - userGuessIsValid function
    - playIntroduction function
