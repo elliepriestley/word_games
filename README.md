@@ -26,10 +26,7 @@ This project is written in Kotlin and requires the installation of the Kotlin co
     `brew update;
     brew install kotlin`
 
-This project also requires the installaton of Java (version: 1.7 or above)
-
-
-
+This project also requires the installation of Java `version 1.7` or above
 
 
 ## 🚀 Installation and Build
@@ -65,10 +62,10 @@ To run the tests directly in the Command Line:
 
 This section lists any assumptions I have made about the functionality or known limitations of the program.
  - Program now only accepts user guesses that are 5-letter words with characters a..z
+ - Program now accepts correct user guesses regardless of case, i.e. if user guesses correct word in uppercase, answer still taken as valid
  - Program does not currently allow the user to choose the no of rounds / difficulty level
  - Program does not currently allow the user to 'select' which word they want to unscramble first
  - Program does not currently have the ability to recognise when a user is new. It will play the Introduction / rules to the game at the start of each new game
- - Guess system is currently case-sensitive
  - Program does not currently accept command-line arguments.
  - Does not currently account for multiple correct answers on one scrambled word: i.e. 'hired' and 'hider'
  - Does not currently validate user input before submitting it as a guess, i.e. 'Are you sure x is your guess?'
