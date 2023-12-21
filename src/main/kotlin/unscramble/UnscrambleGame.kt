@@ -1,8 +1,15 @@
 package unscramble
+import java.io.File
 
 class UnscrambleGame {
-    val wordText = UnscrambleWordsTxt()
-    val fiveLetterWordList = wordText.unfilteredWordList.filter { it.length == 5 }
+    val unfilteredWordList: List<String>
+    init {
+
+        val file = File("/Users/elliepriestley/IdeaProjects/word_games/src/main/kotlin/wordProcessor/words.txt")
+        unfilteredWordList = file.readLines()
+    }
+
+    val fiveLetterWordList = unfilteredWordList.filter { it.length == 5 }
     var gameCounter = 0
 
     fun wordRandomiser(inputList: List<String>): String {
