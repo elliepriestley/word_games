@@ -55,11 +55,11 @@ class UnscrambleGame {
                 
                 Your goal is to unscramble a 5-letter word.                
                 
-                You have one guess...
+                You have one guess for each word, amd you will have to unscramble two words...
                 
                 Ready?
                 
-                Here is your random scrambled word: $scrambledWord
+                Here is your first scrambled word: $scrambledWord
                 
                 Can you unscramble it? Input your guess below 👇 and press Enter: 
         """.trimIndent())
@@ -79,7 +79,18 @@ class UnscrambleGame {
     fun playGame() {
         val word = wordRandomiser(fiveLetterWordList)
         val scrambledWord = scrambleWord(word)
-        playIntroduction(scrambledWord)
+        if (gameCounter == 0) {
+            playIntroduction(scrambledWord)
+        } else {
+            println("""
+                ________________________________________________________
+                
+                Here is your second scrambled word: $scrambledWord
+                
+                Input your guess below 👇 and press Enter:
+                
+            """.trimIndent())
+        }
         val userGuess = readln()
         val didWin = didUserWinGame(word, userGuess)
 
@@ -89,7 +100,7 @@ class UnscrambleGame {
             if (gameCounter == 2) {
                 println("\nCorrect! Well done, you've beaten the game! 🥳")
             } else {
-                println("Correct! Onto the second round...")
+                println("\nCorrect! Onto the second round...")
                 playGame()
             }
         } else {
