@@ -26,7 +26,7 @@ This project is written in Kotlin and requires the installation of the Kotlin co
     `brew update;
     brew install kotlin`
 
-This project also requires the installation of Java `version 1.7` or above
+This project also requires the installation of Java `version 17` or above
 
 
 ## 🚀 Installation and Build
